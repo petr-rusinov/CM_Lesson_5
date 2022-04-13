@@ -61,6 +61,7 @@ size_t wordsCount(const string& str)
     end = unique(tempStr.begin(), tempStr.end(), [](char l, char r) { return isspace(l) && isspace(r); });
     tempStr = string(tempStr.begin(), end);
 
+    //Убираем пробелы в начале
     while (tempStr.length() != 0)
     {
         if (tempStr[0] == ' ')
